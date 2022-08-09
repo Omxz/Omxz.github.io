@@ -1,0 +1,78 @@
+.seven-segment {
+    position: relative;
+    height: 1em;
+    width: 0.5em;
+    
+    
+}
+
+.seven-segment div {
+    position: absolute;
+    transition-timing-function: ease-in;
+    transition-duration: 0.2s;
+    margin-top: 500px;
+}
+
+.seven-segment div:nth-child(1),
+.seven-segment div:nth-child(4), 
+.seven-segment div:nth-child(7) {
+    width: 0.4em;
+    left: 0.05em;
+    height: 0.1em;
+    clip-path: polygon(12% 12%, 88% 12%, 98% 50%, 86% 90%, 12% 88%, 2% 50%);
+}
+
+.seven-segment div:nth-child(4) {
+    top: 0.9em;
+}
+
+.seven-segment div:nth-child(7) {
+    top: 0.45em;
+}
+
+.seven-segment div:nth-child(2),
+.seven-segment div:nth-child(6) {
+    top: 0;
+}
+
+.seven-segment div:nth-child(3),
+.seven-segment div:nth-child(5) {
+    top: 0.45em;
+}
+
+.seven-segment div:nth-child(2),
+.seven-segment div:nth-child(3), 
+.seven-segment div:nth-child(5),
+.seven-segment div:nth-child(6) {
+    width: 0.1em;
+    height: 0.5em;
+    clip-path: polygon(46% 12%, 88% 20%, 88% 88%, 46% 98%, 0% 88%, 0% 20%)
+}
+
+
+.seven-segment div:nth-child(2),
+.seven-segment div:nth-child(3) {
+    right: 0;
+}
+
+body  {
+    display: flex;
+    justify-content: center; 
+}
+
+.countdowns {
+    position: absolute;
+    display: flex;
+    
+}
+
+.img.container img{
+    width: 100vh;
+    height: 100vh;
+
+    
+}
+
+.countdowns p {
+    color: rgba(0, 0, 0, 0);
+}
